@@ -1,0 +1,24 @@
+[36m[main][startup]                             Server starting up...[39m
+[36m[database]                                  Setting up database: /usr/local/bin/ffffng/ffffng.sqlite[39m
+[36m[database][migration]                       Migrating database...[39m
+[36m[database][migration]                       Checking if patch need to be applied: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/001_add-email-queue-table.sql[39m
+[36m[database][migration]                       Patch already applied, skipping: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/001_add-email-queue-table.sql[39m
+[36m[database][migration]                       Checking if patch need to be applied: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/002_add-node-status-table.sql[39m
+[36m[database][migration]                       Patch already applied, skipping: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/002_add-node-status-table.sql[39m
+[36m[database][migration]                       Checking if patch need to be applied: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/003_add-status-mail-type-to-note-state-table.sql[39m
+[36m[database][migration]                       Patch already applied, skipping: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/003_add-status-mail-type-to-note-state-table.sql[39m
+[36m[database][migration]                       Checking if patch need to be applied: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/004_fix_up_column_name_for_monitoring.sql[39m
+[36m[database][migration]                       Patch already applied, skipping: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/004_fix_up_column_name_for_monitoring.sql[39m
+[36m[database][migration]                       Checking if patch need to be applied: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/005_add_hostname_and_monitoring_state.sql[39m
+[36m[database][migration]                       Patch already applied, skipping: /usr/local/bin/ffffng/node_modules/ffffng/server/db/patches/005_add_hostname_and_monitoring_state.sql[39m
+[36m[main]                                      Initializing...[39m
+[36m[jobs]                                      Scheduling background jobs...[39m
+[36m[jobs]                                      Scheduling job: 0 */1 * * * *  MailQueueJob[39m
+[36m[jobs]                                      Scheduling job: 15 */1 * * * *  FixNodeFilenamesJob[39m
+[36m[jobs]                                      Scheduling job: 30 */15 * * * *  NodeInformationRetrievalJob[39m
+[36m[jobs]                                      Scheduling job: 45 */5 * * * *  MonitoringMailsSendingJob[39m
+[36m[jobs]                                      Scheduling job: 0 0 3 * * *  OfflineNodesDeletionJob[39m
+[36m[jobs]                                      Scheduling of background jobs done.[39m
+[90m[mail][queue]                               Start sending pending mails...[39m
+[90m[mail][queue]                               Sending next batch...[39m
+[90m[mail][queue]                               Done sending pending mails.[39m
